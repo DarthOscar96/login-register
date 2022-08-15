@@ -1,0 +1,85 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../../assets/img/cover2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    --color1: #1E3C72; 
+    --color2: #fff;
+    --color3: #000;
+    --bg-img: linear-gradient(to right, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    /* background-image: var(--bg-img); */
+    backdrop-filter: blur(2rem);
+    color: var(--color2);
+    border-radius: .5rem;
+    padding: 1.5rem 1rem;
+    width: 40%;
+    min-width: 570px;
+    border: .1rem solid var(--color2);
+    box-sizing: border-box;
+}
+.checkbox{
+    width: 1rem;
+}
+.first-section, .second-section{
+    margin: .5rem 0;
+    padding: 0 1.5rem 0 1rem;
+    border-color: var(--color2);
+    border-radius: .5rem;
+}
+.first-section input, .second-section input{
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    height: 2rem;
+    margin: 0 0 1rem 0;
+    border-radius: .3rem;
+    border: .2rem solid var(--color2);
+}
+.form h1, p{
+    text-align: center;
+}
+button{
+    border: none;
+    color: var(--color1);
+    background-color: var(--color2);
+    padding: .8rem 2rem;
+    border-radius: .5rem;
+    display: block;
+    margin: 1rem auto 0 auto;
+    font-weight: 800;
+}
+button:hover{
+    background-color: var(--color1);
+    color: var(--color2);
+}
+/* ===================== MEDIA QUERIES ===================== */
+@media screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+        min-width: auto;
+        height: 100vh;
+        border-radius: 0;
+        padding: 1rem;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .form h1, p{
+        text-align: center;
+        margin: 0;
+    }
+}
